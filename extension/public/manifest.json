@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Local Browser MCP Bridge",
+  "description": "A local-only bridge between Chrome and Local Browser MCP.",
+  "version": "0.1.0",
+  "action": {"default_popup": "index.html", "default_title": "Local Browser MCP"},
+  "background": {"service_worker": "service-worker.js", "type": "module"},
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'self'; connect-src ws://127.0.0.1:* ws://localhost:*"}
+}

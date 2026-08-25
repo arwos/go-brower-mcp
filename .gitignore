@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+
+bin/
+
+server/.cache
+
+extension/.npm-cache
+extension/.pnpm-store
+extension/node_modules
+extension/.angular
+#extension/dist
